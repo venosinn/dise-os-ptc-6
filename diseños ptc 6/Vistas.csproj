@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F161A04-09A0-4D61-B033-FB1816B8D781}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>diseños_ptc_6</RootNamespace>
+    <AssemblyName>diseños ptc 6</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net48\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formularios de administrador\frmActualizarEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmActualizarEmpleados.Designer.cs">
+      <DependentUpon>frmActualizarEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmActualizarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmActualizarCita.Designer.cs">
+      <DependentUpon>frmActualizarCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmActualizarHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmActualizarHistorial.Designer.cs">
+      <DependentUpon>frmActualizarHistorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmActualizarPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmActualizarPacientes.Designer.cs">
+      <DependentUpon>frmActualizarPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmActualizarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmActualizarUsuarios.Designer.cs">
+      <DependentUpon>frmActualizarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmAgregarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmAgregarCita.Designer.cs">
+      <DependentUpon>frmAgregarCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmAgregarDiagnostico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmAgregarDiagnostico.Designer.cs">
+      <DependentUpon>frmAgregarDiagnostico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmAgregarHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmAgregarHistorial.Designer.cs">
+      <DependentUpon>frmAgregarHistorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmAgregarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmAgregarPaciente.Designer.cs">
+      <DependentUpon>frmAgregarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmAgregarTratamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmAgregarTratamiento.Designer.cs">
+      <DependentUpon>frmAgregarTratamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaCitas.Designer.cs">
+      <DependentUpon>frmListaCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaDiagnosticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaDiagnosticos.Designer.cs">
+      <DependentUpon>frmListaDiagnosticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaExpediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaExpediente.Designer.cs">
+      <DependentUpon>frmListaExpediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaHistoriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaHistoriales.Designer.cs">
+      <DependentUpon>frmListaHistoriales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaPacientes.Designer.cs">
+      <DependentUpon>frmListaPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaTratamientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaTratamientos.Designer.cs">
+      <DependentUpon>frmListaTratamientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menus principales\frmPrincipalEnfermeros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menus principales\frmPrincipalEnfermeros.Designer.cs">
+      <DependentUpon>frmPrincipalEnfermeros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menus principales\frmPrincipalSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menus principales\frmPrincipalSec.Designer.cs">
+      <DependentUpon>frmPrincipalSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de secretaria\frmListaEmpleadosSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de secretaria\frmListaEmpleadosSec.Designer.cs">
+      <DependentUpon>frmListaEmpleadosSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menus principales\FrmPrincipalDoctores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menus principales\FrmPrincipalDoctores.Designer.cs">
+      <DependentUpon>FrmPrincipalDoctores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menus principales\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menus principales\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmAgregarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmAgregarEmpleado.Designer.cs">
+      <DependentUpon>frmAgregarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmAgregarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmAgregarUsuarios.Designer.cs">
+      <DependentUpon>frmAgregarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaEmpleados.Designer.cs">
+      <DependentUpon>frmListaEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmEspecialidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmEspecialidades.Designer.cs">
+      <DependentUpon>frmEspecialidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmListaUsuarios.Designer.cs">
+      <DependentUpon>frmListaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios de administrador\frmTiposUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios de administrador\frmTiposUsuarios.Designer.cs">
+      <DependentUpon>frmTiposUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="textbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="textbox.Designer.cs">
+      <DependentUpon>textbox.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="formularios de administrador\frmActualizarEmpleados.resx">
+      <DependentUpon>frmActualizarEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmActualizarCita.resx">
+      <DependentUpon>frmActualizarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmActualizarHistorial.resx">
+      <DependentUpon>frmActualizarHistorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmActualizarPacientes.resx">
+      <DependentUpon>frmActualizarPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmActualizarUsuarios.resx">
+      <DependentUpon>frmActualizarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmAgregarCita.resx">
+      <DependentUpon>frmAgregarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmAgregarDiagnostico.resx">
+      <DependentUpon>frmAgregarDiagnostico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmAgregarHistorial.resx">
+      <DependentUpon>frmAgregarHistorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmAgregarPaciente.resx">
+      <DependentUpon>frmAgregarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmAgregarTratamiento.resx">
+      <DependentUpon>frmAgregarTratamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmListaCitas.resx">
+      <DependentUpon>frmListaCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmListaDiagnosticos.resx">
+      <DependentUpon>frmListaDiagnosticos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmListaExpediente.resx">
+      <DependentUpon>frmListaExpediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmListaHistoriales.resx">
+      <DependentUpon>frmListaHistoriales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmListaPacientes.resx">
+      <DependentUpon>frmListaPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmListaTratamientos.resx">
+      <DependentUpon>frmListaTratamientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menus principales\frmPrincipalEnfermeros.resx">
+      <DependentUpon>frmPrincipalEnfermeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menus principales\frmPrincipalSec.resx">
+      <DependentUpon>frmPrincipalSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de secretaria\frmListaEmpleadosSec.resx">
+      <DependentUpon>frmListaEmpleadosSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menus principales\FrmPrincipalDoctores.resx">
+      <DependentUpon>FrmPrincipalDoctores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menus principales\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmAgregarEmpleado.resx">
+      <DependentUpon>frmAgregarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmAgregarUsuarios.resx">
+      <DependentUpon>frmAgregarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmListaEmpleados.resx">
+      <DependentUpon>frmListaEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmEspecialidades.resx">
+      <DependentUpon>frmEspecialidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmListaUsuarios.resx">
+      <DependentUpon>frmListaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios de administrador\frmTiposUsuarios.resx">
+      <DependentUpon>frmTiposUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="textbox.resx">
+      <DependentUpon>textbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medicine-rafiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Health professional team-amico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuarios1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\especialidades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expedientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diagnostico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tratamientos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historiales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\citas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modelos\Modelos.csproj">
+      <Project>{48d30073-bc18-46e6-90e9-7f4b653de0d5}</Project>
+      <Name>Modelos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
